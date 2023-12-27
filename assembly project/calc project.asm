@@ -1,4 +1,4 @@
-                          .MODEL SMALL
+.MODEL SMALL
 .STACK 100H
 .DATA
 MSG1 DB 'For Add enter   :'1'$'
@@ -106,9 +106,7 @@ MAIN PROC
     MOV DL,BL
     INT 21H
     
-    ;LEA DX,MSG
-    ;MOV AH,9
-    ;INT 21H 
+    
     
     JMP EXIT_P 
     
@@ -161,9 +159,6 @@ MAIN PROC
     
     
     
-    ;LEA DX,MSG
-    ;MOV AH,9
-    ;INT 21H
     
     
     
@@ -220,9 +215,6 @@ MAIN PROC
     MOV DL,BL
     INT 21H
     
-    ;LEA DX,MSG
-    ;MOV AH,9
-    ;INT 21H 
     
     
     
@@ -285,9 +277,6 @@ MAIN PROC
     INT 21H
     
     
-    ;LEA DX,MSG
-    ;MOV AH,9
-    ;INT 21H 
     
     JMP EXIT_P
     
